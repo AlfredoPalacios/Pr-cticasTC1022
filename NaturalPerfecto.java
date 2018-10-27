@@ -2,12 +2,13 @@ import java.util.Scanner;
 public class NaturalPerfecto{
     public static void main(String[]args){
         Scanner kb=new Scanner(System.in);
-        int suma, numero, count;
+        int suma=0, numero, count;
         System.out.println("Dame un número:");
         numero=kb.nextInt();
-        for(count=0; count<=numero; count++){
-            if(numbero%count==0){
+        for(count=1; count<numero; count++){
+            if(numero%count==0){
                 suma+=count;
+                //System.out.println(suma);
             }
         }
         if(suma==numero){
